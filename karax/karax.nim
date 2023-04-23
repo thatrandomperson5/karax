@@ -670,7 +670,7 @@ proc dodraw(kxi: KaraxInstance) =
     rdata.queryString = join(hashSplit[1..^1], cstring"?")
   else:
     rdata.hashPart = hashPart
-    rdata.quertString = queryString
+    rdata.queryString = queryString
     
   let newtree = kxi.renderer(rdata)
   inc kxi.runCount
